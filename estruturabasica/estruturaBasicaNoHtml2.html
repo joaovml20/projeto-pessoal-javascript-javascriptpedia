@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript no html</title>
+</head>
+<body>
+    <button onClick="fOlaMundo()">Clique aqui</button>
+    <!-- outra maneira de executa javascript no html é com a tag <script> dentro do html
+         coloque todo o codigo javascript entre as tags <script> e </script> 
+         como no exemplo abaixo que criar uma funcao que executa alert('ola mundo')
+    -->
+    <script> 
+        function fOlaMundo(){
+            alert('ola mundo');
+        }
+    </script>
+    <!--
+        assim como visto no arquivo estruturaBasicaNoHtml.html
+        alert('ola mundo')
+        esse comando executara a mensagem 'ola mundo' numa caixa de texto no navegador
+        note como a tag button chama a funcao FOlaMundo quando clicado
+        A diferença desse metodo para o inline, é que esse esta fora dos elementos html
+        Mas ainda dentro do html, o chamado javascript interno
+    -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript no html</title>
+</head>
+<body>
+    <button onClick="FOlaMundo()">clique aqui</button>
+    <!-- outra maneira de executa javascript no html é com o metodo externo
+     ou seja, escrever o codigo javascript num arquivo separado e depois vincular esse arquivo com o html 
+     para isso, basta usar a tag script e passar o atributo src tendo como seu valor o caminho do arquivo
+     como no exemplo abaixo -->
+    <script src="./arquivo.js" defer></script>
+    <!-- com isso a tag button podera executa a funcao FOlaMundo() 
+     pos essa funcao esta vindo do arquivo.js -->
+</body>
+</html>
