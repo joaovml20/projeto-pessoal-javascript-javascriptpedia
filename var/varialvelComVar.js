@@ -8,4 +8,6 @@ var souUmaVariavel = "ola mundo"
 // que é "ola mundo"
 // javascript diferencia maiusculo de minusculo e vise-versa, ou seja, se no programar tivesse outra variavel com o nome SouUmaVariavel seria diferente da variavel souUmaVariavel por conta do "S" maiusculo.
 // javascript usar o padrão de nomeação de variavel de camelCase, onde a primeira palavra da variavel é minuscula e após ela, a primeira letra das palavras subsequentes são maiusculas
-// exemplo: souUMaVariavel = sou - Uma - Variavel 
+// exemplo: souUMaVariavel = sou - Uma - Variavel
+// apesar de ser possivel usar var para declarar variaveis, é recomendado usar let no lugar de var por causa do escopo de variaveis
+// o escopo de var pode ser tanto local(acessivel apenas dentro do bloco de comando que foi declarado) como global(acessivel para todo o programar) o que pode levar ha erros, por isso, use let
