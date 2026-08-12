@@ -25,3 +25,10 @@ let souUmVazio = null
 let souUmaVariavel
 //acima uma variavel do tipo undefined, esse tipo de variavel significar que a variavel foi declarada 
 // no programar mas não foi atribuido nem um valor a ela
+
+// é possivel ainda criar variaveis que armazenam mais de um valor,os chamados de array ou vetores como abaixo
+let vetorNumeros = [0,1,2,3]
+let arrayLetras = ['a','b','c']
+let vetorMisto = [true,'d',4]
+// os vetores ou arrays no javascript podem armazenar uma coleção de dados do mesmo tipo como tambem
+// podem armazenar tipos diferentes, como visto na variavel vetorMisto
