@@ -30,3 +30,24 @@ let numero6 = 5
 console.log(numero6 ** 2)
 // o operador de Exponenciação(**) executar uma multiplicação entre o valor da esquerda vezes ele mesmo e a quantidade de vezes que determinara isso é o valor a direita
 // no caso acima, numero6 armazenar o valor 5 que é multiplicado por ele mesmo 2 vezes, ou seja 5 * 5, onde o resultado dessa operação sera impresso no console.log
+
+let numero7 = 1
+console.log(numero7++)
+console.log(numero7)
+
+let numero8 = 1
+console.log(++numero8)
+console.log(numero8)
+
+// existem os operadores de pós-incremento e pré-incremento(++), eles nada mais fazem que incrementar +1 a variavel
+// a diferença entre ambos é que um somar antes de utilizar a variavel(Pré) e o outro somar apenas depois da utilização da variavel(Pós), e para utilizar o Pré-incremento bastar usar ++ antes da variavel e o Pós-incremento depois da variavel
+// seguir o exemplo das variaveis acima, o numero7 utilizar o Pós-incremento onde o console log imprime primeiro o valor original da variavel e no proximo console.log, o valor da variavel ja somado. o numero8 utilizar o Pré-incremento onde o console.log ja exibir o numero original da variavel ja somado
+
+let numero9 = 1
+console.log(numero9--)
+console.log(numero9)
+
+let numero10 = 1
+console.log(--numero10)
+console.log(numero10)
+// existem os operadores de pós-decremento e pré-decremento(--), seguem a mesma logica do pós-incremento e pré-incremento(++) com a diferença que pós-decremento e pré-decremento não somam, apenas subtrai por 1
