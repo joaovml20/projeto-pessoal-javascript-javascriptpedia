@@ -1,5 +1,5 @@
-// No javascript existem as estruturas de controle, elas trabalham com os valores booleanos, true e false e ajudam no fluxo do programar
-// Algumas dessas estruturas logo abaixo
+// No javascript existem as estruturas de controle e dentre elas estão as condicionais, elas trabalham com os valores booleanos, true e false e ajudam no fluxo do programar
+// Algumas dessas estruturas desse tipo logo abaixo
 
 let numero = 10
 if(numero > 0){

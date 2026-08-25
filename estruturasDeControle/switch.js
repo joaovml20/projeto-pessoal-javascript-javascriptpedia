@@ -1,4 +1,4 @@
-// no javascript existe a estrutura switch, essa estrutura de controle executar um bloco de comandos entre varios aparti de valores
+// no javascript existe a estrutura switch, essa estrutura de controle condicional executar um bloco de comandos entre varios aparti de valores
 
 let numero = 7
 // o switch começa recebendo um valor que esta entre parenteses logo apos ele, que no caso abaixo é a variavel numero que contem o valor 7, e com esse valor, ele ira trabalhar 
