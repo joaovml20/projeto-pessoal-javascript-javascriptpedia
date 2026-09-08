@@ -7,35 +7,35 @@ switch(numero){
     // como o switch recebeu o valor 7 e nesse caso trabalhar com o valor 1, ele não sera executado
     case 1:
         console.log('é o numero Um')
-        //o break é crucial entre os casos, sempre os coloque no final, pos ele quebraram o fluxo do programar para não executar os casos apos ele, sem ele, o case apos esse tambem seria executado
+        //o break é crucial entre os casos, sempre os coloque no final, pos ele quebrara o fluxo do programar para não executar os casos apos ele, sem ele, o case apos esse(case 2) tambem seria executado
         break;
     case 2:
-        console.log('é o numero Um')
+        console.log('é o numero Dois')
         break;
     case 3:
-        console.log('é o numero Um')
+        console.log('é o numero Três')
         break;
     case 4:
-        console.log('é o numero Um')
+        console.log('é o numero Quatro')
         break;
     case 5:
-        console.log('é o numero Um')
+        console.log('é o numero Cinco')
         break;
     case 6:
-        console.log('é o numero Um')
+        console.log('é o numero Seis')
         break;
     //enfim, o case entre varios que sera executado pos a expressão que o switch recebeu retornar é 7, e esse case sera executado quando o valor da expressão for 7
     case 7:
-        console.log('é o numero Um')
+        console.log('é o numero Sete')
         break;
     case 8:
-        console.log('é o numero Um')
+        console.log('é o numero Oito')
         break;
     case 9:
-        console.log('é o numero Um')
+        console.log('é o numero Nove')
         break;
     case 10:
-        console.log('é o numero Um')
+        console.log('é o numero 10')
         break;
     // o case default é o case que sera executado quando nenhum dos cases anteriores com valores for executado
     default:
