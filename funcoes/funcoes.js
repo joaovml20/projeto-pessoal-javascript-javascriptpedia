@@ -1,6 +1,6 @@
 // funcoes nada mais são que partes de codigos que podem ser chamados atraves de seu nome em qualquer parte do programa(dependendo do seu escopo), eles são uteis para organizar melhor o codigo do programa, por exemplo, uma função para executar uma conta numerica e outra para executar apenas mensagens, assim tornando o programar mais organizado, separando o programar em partes como um quebra-cabeça
 // uma maneira de criar uma função é com o metodo de declaração de função(function declaration), para isso, deve-se iniciar com a palavra-chave function seguido pelo nome da funcão que é personalizado mas é recomendavel um nome que apresente o proposito da função, apos o nome escolhido, deve-se abrir e fechar parenteses, se caso dejesa-se que a função trabalhe com valores vindo de fora, deve-se colocar esses valores dentro do parenteses e se for com mais de um valor, separe eles com virgula, por fim, apos tudo isso, deve-se abrir e fechar chaves onde dentro das chaves, é onde ira ficar os codigos que as funções iram executar ou retorna com a palavra-chave return
-// lembrete que as variaveis entre parenteses nas funções e declaradas dentro das funções tem seus escopos apenas dentro da função, não sendo acessivel fora dela
+// lembrete que as variaveis entre parenteses nas funções e declaradas dentro das funções tem seus escopos apenas dentro da função, não sendo acessivel fora dela, lembre-se tambem que esse metodo sofre hoisting, ou seja, ela pode ser chamada antes de ser definida no código
 // alguns exemplos abaixo
 
 function Apresentacao(){
