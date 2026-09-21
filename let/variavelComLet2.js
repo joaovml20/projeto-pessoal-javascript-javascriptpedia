@@ -6,7 +6,7 @@ let variavel1 = "sou global"
 function funcaoExemplo(){
     let variavel2 = "sou local"
 }
-// a variavel1 tem seu escopo global ja que foi declarada fora de qualquer funcao
+// a variavel1 tem o seu escopo global já que foi declarada fora de qualquer funcao,
 // ou seja, ela é acessivel em qualquer lugar do programar
-// diferente da variavel2 que foi declarada dentro de uma funçao, logo, apenas aquela funcao e seus
-// respectivos codigos dentro dela, tem acesso aquela variavel
+// diferente da variavel2 que foi declarada numa funçao, logo, apenas aquela funcao e os seus
+// respetivos codigos dentro dela, tem acesso aquela variavel
