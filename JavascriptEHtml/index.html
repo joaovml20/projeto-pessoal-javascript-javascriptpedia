@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site De Exemplo</title>
+</head>
+<body>
+    <h1 id="titulo">Site de Exemplo</h1>
+    <script>
+        //aqui é onde o javascript trabalhara com o html através do método interno
+        // para saber outros meios, verifique na pasta: estruturabasica
+
+        // o comando abaixo, declara uma constante que se vincula a uma tag html através do id
+        // no caso abaixo, a variável título se vincular a tag h1 do html com id "titulo"
+        const titulo = document.getElementById('titulo')
+        console.log(titulo.textContent)
+        // no caso acima, console.log irá imprimir o texto da tag cuja variável titulo esta vinculada
+        // nesse caso, a tag h1 contem o texto "Site De Exemplo" e isso é o que console.log imprimira
+    </script>
+</body>
+</html>
