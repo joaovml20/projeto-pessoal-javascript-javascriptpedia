@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1 id="titulo">Site de Exemplo</h1>
+
+    <p class="paragrafo">Sou o primeiro parágrafo</p>
+    <p class="paragrafo">Sou o segundo parágrafo</p>
+    <p class="paragrafo">Sou o terceiro parágrafo</p>
     <script>
         //aqui é onde o javascript trabalhara com o html através do método interno
         // para saber outros meios, verifique na pasta: estruturabasica
@@ -17,6 +21,22 @@
         console.log(titulo.textContent)
         // no caso acima, console.log irá imprimir o texto da tag cuja variável titulo esta vinculada
         // nesse caso, a tag h1 contem o texto "Site De Exemplo" e isso é o que console.log imprimira
+
+        // uma forma de vincular uma variável a vários elementos html é através das class das tags
+        // o método "document.getElementsByClassName()" é semelhante ao "document.getElementById()"
+        // porém ao invés de fazer a vinculação por id da tag, faz por class da tag, ou seja
+        // se varias tags html tiveram o mesmo atributo class, a variável se vinculara a essas tags
+        // com o mesmo atributo, um exemplo abaixo:
+        const paragrafos = document.getElementsByClassName('paragrafo')
+        console.log(paragrafos)
+        // acima, a variável paragrafos se vincular as tags p do html cujo tem a class 'paragrafo'
+        // e console.log irá imprimir essas tags
+        // cabe ressaltar que a constante paragrafos através desse método
+        // tem uma HTMLCollection, que resumidamente, é como se fosse um vetor/array de elementos html
+        // que podem ser acessados por indices como os vetores e se auto atualizam conforme o DOM
+        // por exemplo, se uma nova tag html receber a classe "paragrafo", ela será vinculada
+        // a variável paragrafos automaticamente e se uma tag deixar de ter classe "paragrafo"
+        // ela será removida automaticamente desse vetor de tags html
     </script>
 </body>
 </html>
