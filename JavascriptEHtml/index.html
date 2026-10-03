@@ -11,6 +11,11 @@
     <p class="paragrafo">Sou o primeiro parágrafo</p>
     <p class="paragrafo">Sou o segundo parágrafo</p>
     <p class="paragrafo">Sou o terceiro parágrafo</p>
+
+    <div><p>Estou dentro de uma div</p></div>
+    <div><p>Estou também</p></div>
+    <div><p>Eu também estou numa div</p></div>
+
     <script>
         //aqui é onde o javascript trabalhara com o html através do método interno
         // para saber outros meios, verifique na pasta: estruturabasica
@@ -19,6 +24,8 @@
         // no caso abaixo, a variável título se vincular a tag h1 do html com id "titulo"
         const titulo = document.getElementById('titulo')
         console.log(titulo.textContent)
+        // onde 'document' se refere a pagina do html em si e apos ele(getElementById()) é o método
+        // que buscara a tag através do id nesse caso
         // no caso acima, console.log irá imprimir o texto da tag cuja variável titulo esta vinculada
         // nesse caso, a tag h1 contem o texto "Site De Exemplo" e isso é o que console.log imprimira
 
@@ -37,6 +44,15 @@
         // por exemplo, se uma nova tag html receber a classe "paragrafo", ela será vinculada
         // a variável paragrafos automaticamente e se uma tag deixar de ter classe "paragrafo"
         // ela será removida automaticamente desse vetor de tags html
+
+        // se necessário vincular uma variável a todos os elementos com a mesma tag independente do id e da class
+        // o método getElementsByTagName ajudaria nesse caso
+        // um exemplo abaixo
+        const divs = document.getElementsByTagName('div')
+        console.log(divs)
+        // a constante divs agora faz referência a todas as tags div do document(html)
+        // assim como getElementsByClassName, o método getElementsByTagName também
+        // retornara um HTMLCollection
     </script>
 </body>
 </html>
