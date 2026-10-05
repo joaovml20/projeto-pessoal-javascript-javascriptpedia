@@ -16,6 +16,18 @@
     <div><p>Estou também</p></div>
     <div><p>Eu também estou numa div</p></div>
 
+    <ul>
+        <li class="item">Primeiro item da lista</li>
+        <li class="item">Segundo item da lista</li>
+        <li class="item">Terceiro item da lista</li>
+    </ul>
+
+    <ul class="lista">
+        <li class="itemLista">Primeiro item da lista</li>
+        <li class="itemLista">Segundo item da lista</li>
+        <li class="itemLista">Terceiro item da lista</li>
+    </ul>
+
     <script>
         //aqui é onde o javascript trabalhara com o html através do método interno
         // para saber outros meios, verifique na pasta: estruturabasica
@@ -53,6 +65,28 @@
         // a constante divs agora faz referência a todas as tags div do document(html)
         // assim como getElementsByClassName, o método getElementsByTagName também
         // retornara um HTMLCollection
+
+        // para selecionar uma tag especifica que tem certas características como está dentro de uma outra tag
+        // e que contenha certas classes e etc, existe o método querySelector()
+        // onde dentro do parentheses será passado as características para encontrar a primeira tag que encontrar
+        // com as características
+        // um exemplo
+        const primeiroItem = document.querySelector('ul li.item')
+        console.log(primeiroItem.textContent)
+        // acima a variável primeiroItem faz referência ao primeiro item da lista(ul) cujo tenha a class 'item'
+        // e console.log ira imprimir o texto da tag, que nesse caso é 'Primeiro item da lista'
+        // querySelector() apenas retorna uma tag, se tiver outra tag com essas características, será perdida
+        // para evitar isso existe o método querySelectorAll() que retorna todas as tags com as características
+        // um exemplo abaixo:
+        const listaItens = document.querySelectorAll('.lista .itemLista')
+        console.log(listaItens)
+        // acima a variável listaItens faz referência a todos os itens que contenham a classe 'itemLista'
+        // da lista que contenha a classe 'lista' e imprimira as suas tags que nesse caso, são 3
+        // importante ressalta que querySelectorAll retorna um NodeList, que diferente do HTMLCollection
+        // não é uma lista "viva", ou seja, ela retorna um vetor estático de tags html quando ela foi chamada
+        // porém ela não se atualizar quando um novo elemento atender ao método tendo assim que adiciona-lo manualmente
+        // ao array, diferente do vetor dinâmico  HTMLCollection, que a cada modificação no DOM que afete suas tags
+        // ele automaticamente faz isso
     </script>
 </body>
 </html>
