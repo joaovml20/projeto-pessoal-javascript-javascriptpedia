@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de exemplo 2</title>
+</head>
+<body>
+<div id="div">
+    <p>Sou um parágrafo</p>
+    Sou um parágrafo sem tag
+    <p>Sou outro parágrafo</p>
+</div>
+
+    <script>
+        //aqui é onde o javascript trabalhara com o html através do método interno
+        // para saber outros meios, verifique na pasta: estruturabasica
+
+        // abaixo a declaração de uma variável através do id
+        // que após isso, verificar a quantidade de "filhos" da tag/variável
+        const divHtml = document.getElementById('div');
+        console.log(divHtml.children.length);
+        // acima a propriedade "children" retornar os filhos da variável que
+        // nada mais são que as tags dentro da propria tag a propriedade "length"
+        // retorna o tamanho/quantidade de filhos em número, nesse caso
+        // como a variável divHtml só tem duas tags dentro dela
+        // será retornado 2
+        // cabe resaltar que childen retorna um HTMLCollection
+    </script>
+</body>
+</html>
