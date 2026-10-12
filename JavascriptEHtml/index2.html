@@ -6,11 +6,14 @@
     <title>Site de exemplo 2</title>
 </head>
 <body>
-<div id="div">
-    <p>Sou um parágrafo</p>
-    Sou um parágrafo sem tag
-    <p>Sou outro parágrafo</p>
-</div>
+    <div id="div">
+        <p>Sou um parágrafo</p>
+        Sou um parágrafo sem tag
+        <p>Sou outro parágrafo</p>
+    </div>
+
+    <h1 id="h1"> Sou uma tag H1</h1>
+    <h2 id="h2"> Sou uma tag H2</h2>
 
     <script>
         //aqui é onde o javascript trabalhara com o html através do método interno
@@ -26,6 +29,21 @@
         // como a variável divHtml só tem duas tags dentro dela
         // será retornado 2
         // cabe resaltar que childen retorna um HTMLCollection
+
+        // Para acessar ou modificar uma tag html através do javascript
+        // basta vincular a tag a uma variável js como visto no arquivo index.html anteriormente
+        // após isso, existe, por exemplo, a propriedade innerHTMl que modificar a tag completamente
+        // um exemplo abaixo
+        const h1 = document.getElementById('h1');
+        h1.innerHTML = '<p>Agora sou uma tag p</p>'
+        // acima a tag h1 vinculada a variável h1 tem o seu html completamente modificado pelo innerHTMl
+        // e assim, a tag h1 passa a ser uma tag p com outro texto
+        // para modificar somente o texto da tag, bastar usar a propriedade textContent
+        // um exemplo abaixo
+        const h2 = document.getElementById('h2');
+        h2.textContent = 'Agora sou uma tag H2 com um novo texto';
+        // acima, somente foi modificado o texto da tag h2 via variável js(javascript)
+
     </script>
 </body>
 </html>
