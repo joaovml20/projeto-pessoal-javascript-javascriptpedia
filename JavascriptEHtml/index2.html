@@ -15,6 +15,13 @@
     <h1 id="h1"> Sou uma tag H1</h1>
     <h2 id="h2"> Sou uma tag H2</h2>
 
+    <p id="par">Sou um parágrafo com id modificado</p>
+
+    <p id="par2" class="paragrafo">Sou uma tag com class</p>
+
+    <p id="par3">Sou uma tag sem id</p>
+
+
     <script>
         //aqui é onde o javascript trabalhara com o html através do método interno
         // para saber outros meios, verifique na pasta: estruturabasica
@@ -44,6 +51,30 @@
         h2.textContent = 'Agora sou uma tag H2 com um novo texto';
         // acima, somente foi modificado o texto da tag h2 via variável js(javascript)
 
+        // para manipular apenas os atributos das tags como id,class,src e etc via javascript, basta usar
+        // o método setAttribute
+        // um exemplo abaixo
+        const para = document.getElementById('par');
+        para.setAttribute('id','para1')
+        // no exemplo acima, a tag vinculada a constante para, tem o seu id modificado para 'para1'
+        // observe que setAttribute recebe primeiro o atributo com aspas simples que nesse caso foi id
+        // e depois o valor desse atributo também com aspas simples que nesse caso foi para1
+        // e assim, foi adicionado um novo id ao elemento
+        // para apenas acessar o valor de um atributo de uma tag, bastar usar o método getAttribute
+        // passando para ele, apenas o atributo
+        // um exemplo abaixo:
+        const para2 = document.getElementById('par2');
+        let classDepara2 = para2.getAttribute('class');
+        console.log (classDepara2);
+        // no exemplo acima, getAttribute retornar o valor do atributo class do elemento para2
+        // que então é armazenado na variável classDepara2 e exibido no console.log que nesse caso
+        // é paragrafo
+        // e para remover um atributo de uma tag com js, use o método removeAttribute
+        // passando para ele apenas o atributo a ser removido
+        // um exemplo abaixo:
+        const para3 = document.getElementById('par3');
+        para3.removeAttribute('id')
+        // no exemplo acima, a tag vinculada a variável para3, tem sem id removido
     </script>
 </body>
 </html>
