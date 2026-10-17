@@ -21,6 +21,7 @@
 
     <p id="par3">Sou uma tag sem id</p>
 
+    <p id="par4">Sou uma tag com uma cor diferente</p>
 
     <script>
         //aqui é onde o javascript trabalhara com o html através do método interno
@@ -75,6 +76,32 @@
         const p3 = document.getElementById('par3');
         p3.removeAttribute('id')
         // no exemplo acima, a tag vinculada a variável p3, tem sem id removido
+
+        // É possível ainda modificar o css de um elemento html através da propriedade style
+        // que através dessa propriedade, é possível acessar as propriedades de estilos
+        // Um exemplo abaixo
+        const p4 = document.getElementById('par4');
+        p4.style.color = 'red';
+        // acima a tag html vinculada a variável p4, tem a sua cor alterada para vermelho
+        // através da propriedade style que por sua vez, acessar a propriedade de estilo color
+        // que então recebe a cor vermelha e é modificada
+        // style pode dar acesso outras propriedades como mudar o tamanho da fonte através do fontSize
+        // para isso, é necessário conhecimento de css
+        // ainda usando a variável p4, é possível ainda dá a ela classes css através da propriedade classList
+        // seguido da propriedade add e passando entre parênteses, o nome da classe css
+        // lembre-se que após passar o nome da classe, ela assumirá a formatação da classe passada
+        // um exemplo abaixo:
+        p4.classList.add('ClasseCss');
+        // como não existe essa classe css no arquivo html ou arquivo css vinculado
+        // esse comando não terá efeito
+        // E para remover uma classe css, é o mesmo processo, porém dessa vez a propriedade classList
+        // acessar a propriedade remove
+        // um exemplo abaixo:
+        p4.classList.remove('ClasseCss');
+        // lembre-se que é possível ainda usar o método setAttribute
+        // passando o atributo style e seu valor, um exemplo abaixo ainda com p4:
+        p4.setAttribute("style", "color: red;");
+        // para saber mais sobre o método setAttribute, bastar subir um pouco mais nesse arquivo
     </script>
 </body>
 </html>
