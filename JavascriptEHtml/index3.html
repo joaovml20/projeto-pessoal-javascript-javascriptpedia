@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site De Exemplo</title>
+</head>
+<body>
+
+    <script>
+        //aqui é onde o javascript trabalhara com o html através do método interno
+        // para saber outros meios, verifique na pasta: estruturabasica
+
+        // Para criar elementos html do zero com javascript, utiliza-se método createElement
+        // onde se deve passar para ele apenas o nome da tag html
+        // um exemplo abaixo:
+        const novoElemento = document.createElement('p')
+        // acima uma tag html p é criada com javascript, agora é possível modificar a suas
+        // características como visto nos códigos nos arquivos index.html e index2.html
+        // nesta mesma pasta
+        // um exemplo, mudando apenas o texto do elemento cujo não tem nada no momento
+        novoElemento.textContent = "Sou um elemento criado com js"
+    </script>
+</body>
+</html>
