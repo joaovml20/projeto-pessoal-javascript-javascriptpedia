@@ -62,10 +62,14 @@
         const item2 = document.getElementById('item2')
         const itemNovo = document.createElement('li')
         itemNovo.textContent = "Sou um item criado com js"
+        itemNovo.id = 'novoItem1'
+        itemNovo.style.color = 'blue'
+        itemNovo.style.background = 'white'
         lista.insertBefore(itemNovo,item2)
         // acima é criada as variáveis e vinculadas as tags do html com excessão do itemNovo, que é
-        // um novo elemento criado aparti de js, que em seguida recebe um texto e por fim, é adicionado
-        // como filho a tag vinculada a variável lista e antes da tag vinculada a variável item2
+        // um novo elemento criado aparti de js, que em seguida recebe um texto, um id e tem o seu
+        // modificado respetivamente, e por fim, é adicionado como filho a tag vinculada a variável
+        // lista e antes da tag vinculada a variável item2
     </script>
 </body>
 </html>
