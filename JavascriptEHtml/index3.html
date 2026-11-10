@@ -19,6 +19,10 @@
 
     <p id="paraRemover">Fui removido do DOM com remove</p>
 
+    <div id="div">
+        <p id="paraSubstituir">Vou ser substituído</p>
+    </div>
+
     <script>
         //aqui é onde o javascript trabalhara com o html através do método interno
         // para saber outros meios, verifique na pasta: estruturabasica
@@ -91,6 +95,18 @@
         const elementoRemover = document.getElementById('paraRemover')
         elementoRemover.remove();
         // a tag vinculada a variável elementoRemover é eliminada do DOM com remove
+        // também é possível substituir um elemento por outro, com o método replaceChild
+        // sua sintaxe é semelhante ao uso de insertBefore(falando anteriormente neste mesmo arquivo)
+        // mas no caso de referenceNode, é usado para se refere ao elemento que será substituído pelo
+        // novo, não inserido antes dele como acontece com insertBefore
+        // um exemplo abaixo:
+        const divPai = document.getElementById('div')
+        const elementoAntigo = document.getElementById('paraSubstituir')
+        const pNovo = document.createElement('p')
+        pNovo.id = 'pNovo'
+        pNovo.textContent = "Sou um elemento criado e substituído com js"
+        divPai.replaceChild(pNovo,elementoAntigo)
+        // acima, o elemento pNovo substituí o elemento elementoAntigo
     </script>
 </body>
 </html>
